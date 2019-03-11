@@ -1,0 +1,28 @@
+
+openStack:
+  username: admin
+  password: c0ntrail123
+  project: admin # Used only for auth (eg. by CNM plugin)
+  address: <CONTROLLER_IP>
+  port: 5000
+
+controller:
+  mgmtAddress: <CONTROLLER_IP>
+  ctrlAddress: <CONTROLLER_CTRLPLANE_IP>
+  restApiPort: 8082
+  authMethod: keystone
+
+testbeds:
+  - name: <TESTBED1_NAME>
+    address: <TESTBED1_IP>
+    username: Administrator
+    password: 'Contrail123!'
+  - name: <TESTBED2_NAME>
+    address: <TESTBED2_IP>
+    username: Administrator
+    password: 'Contrail123!'
+
+system:
+  adapterName: Ethernet1
+  vHostName: vEthernet (HNSTransparent)
+  forwardingExtensionName: vRouter forwarding extension

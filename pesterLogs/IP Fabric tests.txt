@@ -1,0 +1,4 @@
+2019-01-16 16:30:19.983834 | test-runner | Downloading Docker images
+2019-01-16 16:40:14.087783 | test-runner | Downloading Docker images
+2019-01-16 16:57:27.372748 | test-runner | Aloha1
+2019-01-16 16:57:30.037161 | test-runner | Downloading Docker images

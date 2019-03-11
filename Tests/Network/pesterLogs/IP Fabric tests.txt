@@ -1,0 +1,503 @@
+2019-01-16 16:46:03.929708 | test-runner | Downloading Docker images
+2019-01-16 17:05:10.027614 | test-runner | Downloading Docker images
+2019-01-16 17:19:55.697290 | test-runner | Downloading Docker images
+2019-01-16 17:28:48.957968 | test-runner | Initialize testenv 1
+2019-01-16 17:28:50.280811 | test-runner | Initialize testenv 2
+2019-01-16 17:28:50.321702 | test-runner | Initialize testenv 3
+2019-01-16 17:28:50.357607 | test-runner | Initialize testenv 4
+2019-01-16 17:28:50.405478 | test-runner | Initialize testenv 5
+2019-01-16 17:32:22.116631 | test-runner | Downloading Docker images
+2019-01-16 17:37:14.104163 | test-runner | Aloha1
+2019-01-16 17:37:14.120084 | test-runner | Aloha2
+2019-01-16 17:37:14.136044 | test-runner | Initialize testenv 0
+2019-01-16 17:37:14.149047 | test-runner | Initialize testenv 1
+2019-01-16 17:37:14.181969 | test-runner | Initialize testenv 2
+2019-01-16 17:37:14.207945 | test-runner | Initialize testenv 3
+2019-01-16 17:37:14.235866 | test-runner | Initialize testenv 4
+2019-01-16 17:37:14.258805 | test-runner | Initialize testenv 5
+2019-01-16 17:37:16.604046 | test-runner | Downloading Docker images
+2019-01-16 18:15:15.738323 | test-runner | Job '10.7.0.63-pulldockerms' result: Using default tag: latest latest: Pulling from microsoft/windowsservercore 3889bb8d808b: Pulling fs layer d0c71fc8924e: Pulling fs layer d0c71fc8924e: Download complete Using default tag: latest latest: Pulling from microsoft/windowsservercore 3889bb8d808b: Pulling fs layer d0c71fc8924e: Pulling fs layer d0c71fc8924e: Download complete 3889bb8d808b: Pull complete d0c71fc8924e: Pull complete Digest: sha256:05de0a0ac13d3652bd1f2281b8589459ebb611092e3fe4d8f1be91f1f6984266 Status: Downloaded newer image for microsoft/windowsservercore:latest Using default tag: latest latest: Pulling from microsoft/nanoserver bce2fbc256ea: Already exists 6f2071dcd729: Already exists Digest: sha256:2b783310e6c82de737e893abd53ae238ca56b5a96e2861558fb9a111d6691ddb Status: Downloaded newer image for microsoft/nanoserver:latest
+2019-01-16 18:15:15.753538 | test-runner | Job '10.7.0.60-pulldockerms' result: Using default tag: latest latest: Pulling from microsoft/windowsservercore 3889bb8d808b: Pulling fs layer d0c71fc8924e: Pulling fs layer d0c71fc8924e: Download complete Using default tag: latest latest: Pulling from microsoft/windowsservercore 3889bb8d808b: Pulling fs layer d0c71fc8924e: Pulling fs layer d0c71fc8924e: Download complete 3889bb8d808b: Pull complete d0c71fc8924e: Pull complete Digest: sha256:05de0a0ac13d3652bd1f2281b8589459ebb611092e3fe4d8f1be91f1f6984266 Status: Downloaded newer image for microsoft/windowsservercore:latest Using default tag: latest latest: Pulling from microsoft/nanoserver Digest: sha256:2b783310e6c82de737e893abd53ae238ca56b5a96e2861558fb9a111d6691ddb Status: Image is up to date for microsoft/nanoserver:latest
+2019-01-16 18:15:15.765190 | test-runner | Initialize testenv 6
+2019-01-16 18:15:15.919232 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/projects]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "project":  {
+                                  |                     "parent_type":  "domain",
+                                  |                     "fq_name":  [
+                                  |                                     "default-domain",
+                                  |                                     "ci_tests_ip_fabric"
+                                  |                                 ]
+                                  |                 }
+                                  | }
+2019-01-16 18:15:16.778512 | test-runner | [Contrail]<= 
+                                  | @{project=}
+2019-01-16 18:15:16.914564 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/security-groups]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "security-group":  {
+                                  |                            "fq_name":  [
+                                  |                                            "default-domain",
+                                  |                                            "ci_tests_ip_fabric",
+                                  |                                            "default"
+                                  |                                        ],
+                                  |                            "security_group_entries":  {
+                                  |                                                           "policy_rule":  [
+                                  |                                                                               {
+                                  |                                                                                   "direction":  ">",
+                                  |                                                                                   "src_addresses":  [
+                                  |                                                                                                         {
+                                  |                                                                                                             "security_group":  "local"
+                                  |                                                                                                         }
+                                  |                                                                                                     ],
+                                  |                                                                                   "dst_addresses":  [
+                                  |                                                                                                         {
+                                  |                                                                                                             "subnet":  {
+                                  |                                                                                                                            "ip_prefix":  "0.0.0.0",
+                                  |                                                                                                                            "ip_prefix_len":  0
+                                  |                                                                                                                        }
+                                  |                                                                                                         }
+                                  |                                                                                                     ],
+                                  |                                                                                   "ethertype":  "IPv4",
+                                  |                                                                                   "dst_ports":  [
+                                  |                                                                                                     {
+                                  |                                                                                                         "end_port":  65535,
+                                  |                                                                                                         "start_port":  0
+                                  |                                                                                                     }
+                                  |                                                                                                 ],
+                                  |                                                                                   "src_ports":  [
+                                  |                                                                                                     {
+                                  |                                                                                                         "end_port":  65535,
+                                  |                                                                                                         "start_port":  0
+                                  |                                                                                                     }
+                                  |                                                                                                 ],
+                                  |                                                                                   "protocol":  "any"
+                                  |                                                                               },
+                                  |                                                                               {
+                                  |                                                                                   "direction":  ">",
+                                  |                                                                                   "src_addresses":  [
+                                  |                                                                                                         {
+                                  |                                                                                                             "subnet":  {
+                                  |                                                                                                                            "ip_prefix":  "0.0.0.0",
+                                  |                                                                                                                            "ip_prefix_len":  0
+                                  |                                                                                                                        }
+                                  |                                                                                                         }
+                                  |                                                                                                     ],
+                                  |                                                                                   "dst_addresses":  [
+                                  |                                                                                                         {
+                                  |                                                                                                             "security_group":  "local"
+                                  |                                                                                                         }
+                                  |                                                                                                     ],
+                                  |                                                                                   "ethertype":  "IPv4",
+                                  |                                                                                   "dst_ports":  [
+                                  |                                                                                                     {
+                                  |                                                                                                         "end_port":  65535,
+                                  |                                                                                                         "start_port":  0
+                                  |                                                                                                     }
+                                  |                                                                                                 ],
+                                  |                                                                                   "src_ports":  [
+                                  |                                                                                                     {
+                                  |                                                                                                         "end_port":  65535,
+                                  |                                                                                                         "start_port":  0
+                                  |                                                                                                     }
+                                  |                                                                                                 ],
+                                  |                                                                                   "protocol":  "any"
+                                  |                                                                               }
+                                  |                                                                           ]
+                                  |                                                       },
+                                  |                            "parent_type":  "project"
+                                  |                        }
+                                  | }
+2019-01-16 18:15:16.990917 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/fqname-to-id]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "type":  "security-group",
+                                  |     "fq_name":  [
+                                  |                     "default-domain",
+                                  |                     "ci_tests_ip_fabric",
+                                  |                     "default"
+                                  |                 ]
+                                  | }
+2019-01-16 18:15:17.046531 | test-runner | [Contrail]<= 
+                                  | @{uuid=7bb45761-6b12-4a26-a07d-5917563d385e}
+2019-01-16 18:15:17.096506 | test-runner | [Contrail][Delete]=>[http://10.7.0.56:8082/security-group/7bb45761-6b12-4a26-a07d-5917563d385e]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+2019-01-16 18:15:17.611751 | test-runner | [Contrail]<= 
+                                  | <EMPTY>
+2019-01-16 18:15:17.642793 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/security-groups]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "security-group":  {
+                                  |                            "fq_name":  [
+                                  |                                            "default-domain",
+                                  |                                            "ci_tests_ip_fabric",
+                                  |                                            "default"
+                                  |                                        ],
+                                  |                            "security_group_entries":  {
+                                  |                                                           "policy_rule":  [
+                                  |                                                                               {
+                                  |                                                                                   "direction":  ">",
+                                  |                                                                                   "src_addresses":  [
+                                  |                                                                                                         {
+                                  |                                                                                                             "security_group":  "local"
+                                  |                                                                                                         }
+                                  |                                                                                                     ],
+                                  |                                                                                   "dst_addresses":  [
+                                  |                                                                                                         {
+                                  |                                                                                                             "subnet":  {
+                                  |                                                                                                                            "ip_prefix":  "0.0.0.0",
+                                  |                                                                                                                            "ip_prefix_len":  0
+                                  |                                                                                                                        }
+                                  |                                                                                                         }
+                                  |                                                                                                     ],
+                                  |                                                                                   "ethertype":  "IPv4",
+                                  |                                                                                   "dst_ports":  [
+                                  |                                                                                                     {
+                                  |                                                                                                         "end_port":  65535,
+                                  |                                                                                                         "start_port":  0
+                                  |                                                                                                     }
+                                  |                                                                                                 ],
+                                  |                                                                                   "src_ports":  [
+                                  |                                                                                                     {
+                                  |                                                                                                         "end_port":  65535,
+                                  |                                                                                                         "start_port":  0
+                                  |                                                                                                     }
+                                  |                                                                                                 ],
+                                  |                                                                                   "protocol":  "any"
+                                  |                                                                               },
+                                  |                                                                               {
+                                  |                                                                                   "direction":  ">",
+                                  |                                                                                   "src_addresses":  [
+                                  |                                                                                                         {
+                                  |                                                                                                             "subnet":  {
+                                  |                                                                                                                            "ip_prefix":  "0.0.0.0",
+                                  |                                                                                                                            "ip_prefix_len":  0
+                                  |                                                                                                                        }
+                                  |                                                                                                         }
+                                  |                                                                                                     ],
+                                  |                                                                                   "dst_addresses":  [
+                                  |                                                                                                         {
+                                  |                                                                                                             "security_group":  "local"
+                                  |                                                                                                         }
+                                  |                                                                                                     ],
+                                  |                                                                                   "ethertype":  "IPv4",
+                                  |                                                                                   "dst_ports":  [
+                                  |                                                                                                     {
+                                  |                                                                                                         "end_port":  65535,
+                                  |                                                                                                         "start_port":  0
+                                  |                                                                                                     }
+                                  |                                                                                                 ],
+                                  |                                                                                   "src_ports":  [
+                                  |                                                                                                     {
+                                  |                                                                                                         "end_port":  65535,
+                                  |                                                                                                         "start_port":  0
+                                  |                                                                                                     }
+                                  |                                                                                                 ],
+                                  |                                                                                   "protocol":  "any"
+                                  |                                                                               }
+                                  |                                                                           ]
+                                  |                                                       },
+                                  |                            "parent_type":  "project"
+                                  |                        }
+                                  | }
+2019-01-16 18:15:17.905324 | test-runner | [Contrail]<= 
+                                  | @{security-group=}
+2019-01-16 18:15:17.944071 | test-runner | Creating virtual router. Name: JIG4-tb1; Address: 10.7.0.63
+2019-01-16 18:15:17.984112 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/virtual-routers]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "virtual-router":  {
+                                  |                            "virtual_router_ip_address":  "10.7.0.63",
+                                  |                            "fq_name":  [
+                                  |                                            "default-global-system-config",
+                                  |                                            "JIG4-tb1"
+                                  |                                        ],
+                                  |                            "parent_type":  "global-system-config"
+                                  |                        }
+                                  | }
+2019-01-16 18:15:18.042670 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/fqname-to-id]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "type":  "virtual-router",
+                                  |     "fq_name":  [
+                                  |                     "default-global-system-config",
+                                  |                     "JIG4-tb1"
+                                  |                 ]
+                                  | }
+2019-01-16 18:15:18.146750 | test-runner | [Contrail]<= 
+                                  | @{uuid=17b1db9d-651c-460f-b130-ce305530d0e6}
+2019-01-16 18:15:18.181462 | test-runner | [Contrail][Delete]=>[http://10.7.0.56:8082/virtual-router/17b1db9d-651c-460f-b130-ce305530d0e6]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+2019-01-16 18:15:18.307626 | test-runner | [Contrail]<= 
+                                  | <EMPTY>
+2019-01-16 18:15:18.340634 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/virtual-routers]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "virtual-router":  {
+                                  |                            "virtual_router_ip_address":  "10.7.0.63",
+                                  |                            "fq_name":  [
+                                  |                                            "default-global-system-config",
+                                  |                                            "JIG4-tb1"
+                                  |                                        ],
+                                  |                            "parent_type":  "global-system-config"
+                                  |                        }
+                                  | }
+2019-01-16 18:15:18.469376 | test-runner | [Contrail]<= 
+                                  | @{virtual-router=}
+2019-01-16 18:15:18.498361 | test-runner | Reported UUID of new virtual router: c12ee319-197c-4bf4-b0bc-b8575faa5ae8
+2019-01-16 18:15:18.514319 | test-runner | Creating virtual router. Name: JIG4-tb2; Address: 10.7.0.60
+2019-01-16 18:15:18.531598 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/virtual-routers]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "virtual-router":  {
+                                  |                            "virtual_router_ip_address":  "10.7.0.60",
+                                  |                            "fq_name":  [
+                                  |                                            "default-global-system-config",
+                                  |                                            "JIG4-tb2"
+                                  |                                        ],
+                                  |                            "parent_type":  "global-system-config"
+                                  |                        }
+                                  | }
+2019-01-16 18:15:18.591962 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/fqname-to-id]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "type":  "virtual-router",
+                                  |     "fq_name":  [
+                                  |                     "default-global-system-config",
+                                  |                     "JIG4-tb2"
+                                  |                 ]
+                                  | }
+2019-01-16 18:15:18.642348 | test-runner | [Contrail]<= 
+                                  | @{uuid=c9f04e55-0961-483a-9dd0-43261c430d2b}
+2019-01-16 18:15:18.675531 | test-runner | [Contrail][Delete]=>[http://10.7.0.56:8082/virtual-router/c9f04e55-0961-483a-9dd0-43261c430d2b]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+2019-01-16 18:15:18.798566 | test-runner | [Contrail]<= 
+                                  | <EMPTY>
+2019-01-16 18:15:18.828471 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/virtual-routers]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "virtual-router":  {
+                                  |                            "virtual_router_ip_address":  "10.7.0.60",
+                                  |                            "fq_name":  [
+                                  |                                            "default-global-system-config",
+                                  |                                            "JIG4-tb2"
+                                  |                                        ],
+                                  |                            "parent_type":  "global-system-config"
+                                  |                        }
+                                  | }
+2019-01-16 18:15:18.943503 | test-runner | [Contrail]<= 
+                                  | @{virtual-router=}
+2019-01-16 18:15:18.974487 | test-runner | Reported UUID of new virtual router: e4e4d7b4-b351-4c7e-b2ad-832e54c82f36
+2019-01-16 18:15:33.855940 | test-runner | Aloha3
+2019-01-16 18:15:33.873467 | test-runner | Creating virtual network: testnet_fabric_ip
+2019-01-16 18:15:33.891421 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/fqname-to-id]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "type":  "virtual-network",
+                                  |     "fq_name":  [
+                                  |                     "default-domain",
+                                  |                     "default-project",
+                                  |                     "ip-fabric"
+                                  |                 ]
+                                  | }
+2019-01-16 18:15:33.938867 | test-runner | [Contrail]<= 
+                                  | @{uuid=fe9f195f-910b-4576-a15c-3321bff2a11a}
+2019-01-16 18:15:34.045062 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/virtual-networks]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "virtual-network":  {
+                                  |                             "virtual_network_refs":  [
+                                  |                                                          {
+                                  |                                                              "uuid":  "fe9f195f-910b-4576-a15c-3321bff2a11a",
+                                  |                                                              "to":  "default-domain:default-project:ip-fabric",
+                                  |                                                              "href":  "http://10.7.0.56:8082/virtual-network/fe9f195f-910b-4576-a15c-3321bff2a11a"
+                                  |                                                          }
+                                  |                                                      ],
+                                  |                             "network_policy_refs":  [
+                                  |                                                     ],
+                                  |                             "network_ipam_refs":  [
+                                  |                                                       {
+                                  |                                                           "to":  [
+                                  |                                                                      "default-domain",
+                                  |                                                                      "default-project",
+                                  |                                                                      "default-network-ipam"
+                                  |                                                                  ],
+                                  |                                                           "attr":  {
+                                  |                                                                        "ipam_subnets":  [
+                                  |                                                                                             {
+                                  |                                                                                                 "subnet":  {
+                                  |                                                                                                                "ip_prefix":  "172.16.0.128",
+                                  |                                                                                                                "ip_prefix_len":  28
+                                  |                                                                                                            },
+                                  |                                                                                                 "addr_from_start":  true,
+                                  |                                                                                                 "allocation_pools":  [
+                                  |                                                                                                                          {
+                                  |                                                                                                                              "start":  "172.16.0.150",
+                                  |                                                                                                                              "end":  "172.16.0.180"
+                                  |                                                                                                                          }
+                                  |                                                                                                                      ],
+                                  |                                                                                                 "enable_dhcp":  true,
+                                  |                                                                                                 "default_gateway":  "172.16.0.129"
+                                  |                                                                                             }
+                                  |                                                                                         ]
+                                  |                                                                    }
+                                  |                                                       }
+                                  |                                                   ],
+                                  |                             "parent_type":  "project",
+                                  |                             "provider_properties":  {
+                                  |                                                         "segmentation_id":  0,
+                                  |                                                         "physical_network":  "default-domain:default-project:ip-fabric"
+                                  |                                                     },
+                                  |                             "fq_name":  [
+                                  |                                             "default-domain",
+                                  |                                             "ci_tests_ip_fabric",
+                                  |                                             "testnet_fabric_ip"
+                                  |                                         ]
+                                  |                         }
+                                  | }
+2019-01-16 18:15:34.242002 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/fqname-to-id]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "type":  "virtual-network",
+                                  |     "fq_name":  [
+                                  |                     "default-domain",
+                                  |                     "ci_tests_ip_fabric",
+                                  |                     "testnet_fabric_ip"
+                                  |                 ]
+                                  | }
+2019-01-16 18:15:34.301472 | test-runner | Removing virtual router: JIG4-tb1
+2019-01-16 18:15:34.317393 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/fqname-to-id]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "type":  "virtual-router",
+                                  |     "fq_name":  [
+                                  |                     "default-global-system-config",
+                                  |                     "JIG4-tb1"
+                                  |                 ]
+                                  | }
+2019-01-16 18:15:34.362411 | test-runner | [Contrail]<= 
+                                  | @{uuid=c12ee319-197c-4bf4-b0bc-b8575faa5ae8}
+2019-01-16 18:15:34.388355 | test-runner | [Contrail][Delete]=>[http://10.7.0.56:8082/virtual-router/c12ee319-197c-4bf4-b0bc-b8575faa5ae8]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+2019-01-16 18:15:34.499547 | test-runner | [Contrail]<= 
+                                  | <EMPTY>
+2019-01-16 18:15:34.531472 | test-runner | Removing virtual router: JIG4-tb2
+2019-01-16 18:15:34.545434 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/fqname-to-id]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "type":  "virtual-router",
+                                  |     "fq_name":  [
+                                  |                     "default-global-system-config",
+                                  |                     "JIG4-tb2"
+                                  |                 ]
+                                  | }
+2019-01-16 18:15:34.591483 | test-runner | [Contrail]<= 
+                                  | @{uuid=e4e4d7b4-b351-4c7e-b2ad-832e54c82f36}
+2019-01-16 18:15:34.620435 | test-runner | [Contrail][Delete]=>[http://10.7.0.56:8082/virtual-router/e4e4d7b4-b351-4c7e-b2ad-832e54c82f36]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+2019-01-16 18:15:34.746387 | test-runner | [Contrail]<= 
+                                  | <EMPTY>
+2019-01-16 18:15:34.781288 | test-runner | Removing project: ci_tests_ip_fabric with dependencies
+2019-01-16 18:15:34.800703 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/fqname-to-id]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "type":  "project",
+                                  |     "fq_name":  [
+                                  |                     "default-domain",
+                                  |                     "ci_tests_ip_fabric"
+                                  |                 ]
+                                  | }
+2019-01-16 18:15:34.842248 | test-runner | [Contrail]<= 
+                                  | @{uuid=b28a522e-c1c0-441a-990b-146a1e646a16}
+2019-01-16 18:15:34.878516 | test-runner | [Contrail][Get]=>[http://10.7.0.56:8082/project/b28a522e-c1c0-441a-990b-146a1e646a16]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+2019-01-16 18:15:35.003980 | test-runner | [Contrail]<= 
+                                  | @{project=}
+2019-01-16 18:15:35.042403 | test-runner | [Contrail][Delete]=>[http://10.7.0.56:8082/security-group/30212136-2b20-4748-bade-064ed6ecab54]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+2019-01-16 18:15:35.324596 | test-runner | [Contrail]<= 
+                                  | <EMPTY>
+2019-01-16 18:15:35.346537 | test-runner | [Contrail][Delete]=>[http://10.7.0.56:8082/project/b28a522e-c1c0-441a-990b-146a1e646a16]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+2019-01-16 18:15:35.951541 | test-runner | [Contrail]<= 
+                                  | <EMPTY>
+2019-01-16 18:15:36.106139 | test-runner | Invoke-Command : The property 'NM' cannot be found on this object. Verify that the property exists and can be set.
+2019-01-16 18:15:36.106139 | test-runner | At C:\Contrail\contrail-windows-ci-juniper\Test\Utils\TestCleanup\CleanupStack.ps1:35 char:9
+2019-01-16 18:15:36.106139 | test-runner | +         Invoke-Command -ScriptBlock $FunctionObject.ScriptBlock -Argu ...
+2019-01-16 18:15:36.106139 | test-runner | +         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2019-01-16 18:15:36.106139 | test-runner |     + CategoryInfo          : InvalidOperation: (:) [Invoke-Command], RuntimeException
+2019-01-16 18:15:36.106139 | test-runner |     + FullyQualifiedErrorId : PropertyAssignmentException,Microsoft.PowerShell.Commands.InvokeCommandCommand
+2019-01-16 18:15:36.106139 | test-runner |  
+2019-01-17 10:27:49.621516 | test-runner | Aloha1
+2019-01-17 10:27:49.643458 | test-runner | Aloha2
+2019-01-17 10:27:49.653952 | test-runner | Initialize testenv 0
+2019-01-17 10:27:49.670906 | test-runner | Initialize testenv 1
+2019-01-17 10:27:49.703319 | test-runner | Initialize testenv 2
+2019-01-17 10:27:49.725259 | test-runner | Initialize testenv 3
+2019-01-17 10:27:49.747960 | test-runner | Initialize testenv 4
+2019-01-17 10:27:49.770901 | test-runner | Initialize testenv 5
+2019-01-17 10:27:58.811764 | test-runner | Downloading Docker images
+2019-01-17 10:28:03.795948 | test-runner | Job '10.7.0.63-pulldockerms' result: Using default tag: latest latest: Pulling from microsoft/windowsservercore Digest: sha256:05de0a0ac13d3652bd1f2281b8589459ebb611092e3fe4d8f1be91f1f6984266 Status: Image is up to date for microsoft/windowsservercore:latest Using default tag: latest latest: Pulling from microsoft/nanoserver Digest: sha256:2b783310e6c82de737e893abd53ae238ca56b5a96e2861558fb9a111d6691ddb Status: Image is up to date for microsoft/nanoserver:latest
+2019-01-17 10:28:03.809947 | test-runner | Job '10.7.0.60-pulldockerms' result: Using default tag: latest latest: Pulling from microsoft/windowsservercore Digest: sha256:05de0a0ac13d3652bd1f2281b8589459ebb611092e3fe4d8f1be91f1f6984266 Status: Image is up to date for microsoft/windowsservercore:latest Using default tag: latest latest: Pulling from microsoft/nanoserver Digest: sha256:2b783310e6c82de737e893abd53ae238ca56b5a96e2861558fb9a111d6691ddb Status: Image is up to date for microsoft/nanoserver:latest
+2019-01-17 10:28:03.820882 | test-runner | Initialize testenv 6
+2019-01-17 10:28:03.840830 | test-runner | [Contrail][Post]=>[http://10.7.0.56:8082/projects]
+                                  | Headers:
+                                  | ;
+                                  | Body:
+                                  | {
+                                  |     "project":  {
+                                  |                     "parent_type":  "domain",
+                                  |                     "fq_name":  [
+                                  |                                     "default-domain",
+                                  |                                     "ci_tests_ip_fabric"
+                                  |                                 ]
+                                  |                 }
+                                  | }
