@@ -93,7 +93,8 @@ function Get-ContainerSubnet {
 }
 
 Test-WithRetries 3 {
-    Describe 'IP Fabric tests' -Tag Smoke, EnvSafe {
+    # TODO This test should be eventually marked as "Smoke".
+    Describe 'IP Fabric tests' -Tag EnvSafe {
         Context "Gateway-less forwarding" {
             It 'Container can ping compute node in underlay network' {
                 # TODO Move getting IP for interface to Testbed class

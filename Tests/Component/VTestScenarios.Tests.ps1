@@ -14,7 +14,8 @@ Param (
 . $PSScriptRoot\..\..\Utils\ContrailAPI\ContrailAPI.ps1
 . $PSScriptRoot\..\..\Utils\TestCleanup\TestCleanup.ps1
 
-Describe 'vTest scenarios' -Tag Smoke {
+# TODO This test should be eventually marked as "Smoke".
+Describe 'vTest scenarios' {
     It 'passes all vtest scenarios' {
         {
             Invoke-Command -Session $Testbed.GetSession() -ScriptBlock {
