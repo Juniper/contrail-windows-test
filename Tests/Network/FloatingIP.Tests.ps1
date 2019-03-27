@@ -54,7 +54,8 @@ $ServerFloatingIp = [FloatingIp]::New('test_fip', $ServerFloatingIpPool.GetFqNam
 $ContainerClientID = 'fip-client'
 $ContainerServerID = 'fip-server'
 
-Describe 'Floating IP' -Tags Smoke, EnvSafe {
+# TODO This test should be eventually marked as "Smoke".
+Describe 'Floating IP' -Tags EnvSafe {
     Context 'Multinode' {
         Context '2 networks' {
             It 'ICMP works' {

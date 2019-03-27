@@ -68,7 +68,8 @@ function Get-NumberOfStoredPorts {
 }
 
 Test-WithRetries 3 {
-    Describe 'Agent restart tests' -Tags Smoke, EnvSafe {
+    # TODO This test should be eventually marked as "Smoke".
+    Describe 'Agent restart tests' -Tags EnvSafe {
         It 'Ports are correctly restored after Agent restart' {
             Write-Log 'Testing ping before Agent restart...'
             Test-Ping `

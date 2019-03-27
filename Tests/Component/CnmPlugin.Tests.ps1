@@ -71,7 +71,8 @@ function Save-CnmPluginUnitTestReport {
     Copy-Item $FoundRemoteJUnitReports.FullName -Destination $LocalJUnitDir -FromSession $Testbed.GetSession()
 }
 
-Describe "CNM Plugin" -Tags Smoke, EnvSafe {
+# TODO This test should be eventually marked as "Smoke".
+Describe "CNM Plugin" -Tags EnvSafe {
     BeforeAll {
         $Testbeds = [Testbed]::LoadFromFile($TestenvConfFile)
         $Testbed = $Testbeds[0]

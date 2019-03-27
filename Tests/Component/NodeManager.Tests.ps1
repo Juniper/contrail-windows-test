@@ -60,7 +60,8 @@ function Test-ControllerReceivesNodeStatus {
     return $true
 }
 
-Describe 'Node manager' -Tags Smoke, EnvSafe {
+# TODO This test should be eventually marked as "Smoke".
+Describe 'Node manager' -Tags EnvSafe {
     It 'starts' {
         $Sess = $Testenv.Testbeds[0].GetSession()
         Eventually {

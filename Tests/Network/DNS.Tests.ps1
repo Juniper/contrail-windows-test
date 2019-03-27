@@ -206,7 +206,8 @@ function ResolveWithError {
 }
 
 Test-WithRetries 3 {
-    Describe 'DNS tests' -Tags Smoke, EnvSafe {
+    # TODO This test should be eventually marked as "Smoke".
+    Describe 'DNS tests' -Tags EnvSafe {
         BeforeAll {
             $Testenv = [Testenv]::New()
             $Testenv.Initialize($TestenvConfFile, $LogDir, $ContrailProject, $PrepareEnv)
