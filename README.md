@@ -1,3 +1,4 @@
+Dummy change to trigger Windows CI
 # Running tests
 
 This document describes how to set up everything needed for running Windows sanity tests:
