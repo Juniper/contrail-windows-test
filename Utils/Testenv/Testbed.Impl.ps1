@@ -124,7 +124,7 @@ class Testbed {
     hidden [Void] SetDefaultDockerImage() {
         switch ($this.WinVersion) {
             'v2016' {
-                $this.DefaultDockerImage = 'microsoft/windowsservercore'
+                $this.DefaultDockerImage = 'microsoft/windowsservercore:ltsc2016'
             }
             'v2019' {
                 $this.DefaultDockerImage = 'mcr.microsoft.com/windows/servercore:1809'

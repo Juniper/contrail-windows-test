@@ -18,7 +18,7 @@ function Sync-MicrosoftDockerImagesOnTestbeds {
         $JobName = "$($Testbed.GetSession().ComputerName)-pulldockerms"
         switch ($Testbed.WinVersion) {
             'v2016' {
-                $Images = @('microsoft/windowsservercore', 'microsoft/nanoserver')
+                $Images = @('microsoft/windowsservercore:ltsc2016', 'microsoft/nanoserver:ltsc2016')
             }
             'v2019' {
                 $Images = @('mcr.microsoft.com/windows/servercore:1809', 'mcr.microsoft.com/windows/nanoserver:1809')
